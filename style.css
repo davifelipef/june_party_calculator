@@ -67,8 +67,8 @@
 /* Config for small devices and most mobile phones*/
 @media screen and (min-width:480px) {
     body {
-        min-height: 100vh;
-        background: linear-gradient(25deg, #f88379, #FEE715);
+        /*min-height: 100vh;*/
+        background: #FEE715;
         padding-left: 0.5em;
         padding-right: 0.5em;
         margin: 0;
@@ -79,7 +79,7 @@
     }
     .frozen-container {
         position: sticky;
-        width: 100%;
+        background: #FEE715;
         top: 1em;
         z-index: 999; 
     }
@@ -117,6 +117,11 @@
     }
     .caption {
         margin-top: 0.5em;
+    }
+    footer {
+        margin-top: 2em;
+        margin-bottom: 1em;
+        font-size: 0.9em;
     }
     
 }
