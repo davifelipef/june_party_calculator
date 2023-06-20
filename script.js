@@ -1,7 +1,16 @@
 function changeColor(img) {
     var value = parseFloat(img.getAttribute("data-value")); // Get the custom value
     img.style.filter = "none"; // Remove the grayscale filter
-    updateTotal(value); // Subtract the custom value from the total
+
+    // Update the caption text
+    var caption = img.nextElementSibling;
+    var clickCount = parseInt(img.getAttribute("data-click-count")) || 0; // Default to 0 if data-click-count attribute is not set
+    clickCount++;
+    img.setAttribute("data-click-count", clickCount);
+    caption.textContent = caption.textContent.replace(/\(\d+\)$/, "") + " (" + clickCount + ")";
+      
+
+    updateTotal(value); // Adds the custom value from the total
 }
   
 function updateTotal(value) {
@@ -27,6 +36,11 @@ function clearContents() {
     for (var i = 0; i < images.length; i++) {
         var img = images[i];
         img.style.filter = "grayscale(100%)";
+
+        // Reset the caption text
+        var caption = img.nextElementSibling;
+        caption.textContent = caption.textContent.replace(/\(\d+\)$/, "");
+        img.setAttribute("data-click-count", 0);
     }
 }
 
