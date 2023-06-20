@@ -70,15 +70,51 @@
 /* Config for small devices and most mobile phones*/
 @media screen and (min-width:480px) {
     body {
-        min-height: 94vh;
-        background:blue;
-        padding-top: 1%;
-        padding-left: 8%;
-        padding-right: 8%;
-        padding-bottom: 4%;
+        min-height: 100vh;
+        background: linear-gradient(25deg, #f88379, #FEE715);
+        padding-left: 0.5em;
+        padding-right: 0.5em;
+        margin: 0;
         background-repeat: no-repeat;
-        color: #ebeded;
-        text-align:center;
+        color: #181818;
+        font-weight: bolder;
+        text-align: center;
+    }
+    .frozen-container {
+        position: sticky;
+        width: 100%;
+        top: 1em;
+        z-index: 999; 
+    }
+    .frozen-row {
+        padding: 0.1em;
+        margin: 0 0;
+        position: relative;
+    }
+    .flex-container {
+        display: flex;
+        margin-top: 3em;
+        justify-content: center; 
+        gap: 0.1em; 
+    }
+    #total {
+        font-size: 3em;
+        font-weight: bolder;
+        color: green;
+    }
+    .column {
+        flex: 1;
+    }
+    .item {
+        margin-bottom: 2em;
+        display: flex;
+        justify-content: center;
+    }
+    .image {
+        width: 7em;
+        height: 7em;
+        filter: grayscale(100%);
+        position: relative;
     }
     
 }
