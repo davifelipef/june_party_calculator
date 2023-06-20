@@ -67,7 +67,6 @@
 /* Config for small devices and most mobile phones*/
 @media screen and (min-width:480px) {
     body {
-        /*min-height: 100vh;*/
         background: #FEE715;
         padding-left: 0.5em;
         padding-right: 0.5em;
@@ -77,20 +76,22 @@
         font-weight: bolder;
         text-align: center;
     }
+    .content {
+        padding-top: 1em;
+    }
     .frozen-container {
         position: sticky;
+        top: 0;
         background: #FEE715;
-        top: 1em;
         z-index: 999; 
+        padding-bottom: 1em; /* Ajust the space below the container */
     }
     .frozen-row {
-        padding: 0.1em;
         margin: 0 0;
         position: relative;
     }
     .flex-container {
         display: flex;
-        margin-top: 3em;
         justify-content: center; 
         gap: 0.1em; 
     }
@@ -100,7 +101,7 @@
         color: green;
     }
     .column {
-        flex: 0.2;
+        flex: 0.1; /* adjusts the horizontal space between the columns */
     }
     .item {
         margin-bottom: 2em;
