@@ -1,61 +1,100 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>Caixa Junina</title>
-  <link rel="stylesheet" type="text/css" href="style.css">
-  <script src="script.js"></script>
-</head>
-<body>
-    <div class="content">
-        <!--This paragraph stays above all content when rolled down-->
-        <div class="frozen-container">
-            <h1 class="frozen-row">Caixa Junina</h1>
-            <p class="frozen-row">Total:</p>
-            <div class="total-container">
-                <p class="frozen-row" id="total" data-total="0">R$ 0.00</p>
-                <button class="frozen-row" id="clear_button" onclick="clearContents()">Limpar</button>
+    <head>
+        <title>Caixa Junina</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <script src="script.js"></script>
+    </head>
+    <body>
+        <div class="content">
+            <!--This paragraph stays above all content when rolled down-->
+            <div class="frozen-container">
+                <h1 class="frozen-row">Caixa Junina</h1>
+                <p class="frozen-row">Total:</p>
+                <div class="total-container">
+                    <p class="frozen-row" id="total" data-total="0">R$ 0.00</p>
+                    <button class="frozen-row" id="clear_button" onclick="clearContents()">Limpar</button>
+                </div>
+            </div>
+            <div class="flex-container">
+                <!-- Column 1 -->
+                <div class="column">
+                    <div class="item">
+                        <img src="src/ice-cream.png" class="image" data-value="1.00" onclick="changeColor(this)">
+                        <div class="caption" id="ice-cream">SORVETE</div>
+                    </div>
+                    <div class="item">
+                        <img src="src/ice-cream.png" class="image" data-value="1.00" onclick="changeColor(this)">
+                        <div class="caption" id="ice-cream">SORVETE</div>
+                    </div>
+                    <div class="item">
+                        <img src="src/ice-cream.png" class="image" data-value="1.00" onclick="changeColor(this)">
+                        <div class="caption" id="ice-cream">SORVETE</div>
+                    </div>
+                    <div class="item">
+                        <img src="src/ice-cream.png" class="image" data-value="1.00" onclick="changeColor(this)">
+                        <div class="caption" id="ice-cream">SORVETE</div>
+                    </div>
+                </div>
+                <!-- Column 2 -->
+                <div class="column">
+                <div class="item">
+                    <img src="src/corn.png" class="image" data-value="2.00" onclick="changeColor(this)">
+                    <div class="caption" id="corn">MILHO</div>
+                </div>
+                <div class="item">
+                    <img src="src/corn.png" class="image" data-value="2.00" onclick="changeColor(this)">
+                    <div class="caption" id="corn">MILHO</div>
+                </div>
+                <div class="item">
+                    <img src="src/corn.png" class="image" data-value="2.00" onclick="changeColor(this)">
+                    <div class="caption" id="corn">MILHO</div>
+                </div>
+                <div class="item">
+                    <img src="src/corn.png" class="image" data-value="2.00" onclick="changeColor(this)">
+                    <div class="caption" id="corn">MILHO</div>
+                </div>
+                </div>
+                <!-- Column 3 -->
+                <div class="column">
+                    <div class="item">
+                    <img src="src/corn.png" class="image" data-value="2.00" onclick="changeColor(this)">
+                    <div class="caption" id="corn">MILHO</div>
+                    </div>
+                    <div class="item">
+                    <img src="src/corn.png" class="image" data-value="2.00" onclick="changeColor(this)">
+                    <div class="caption" id="corn">MILHO</div>
+                    </div>
+                    <div class="item">
+                    <img src="src/corn.png" class="image" data-value="2.00" onclick="changeColor(this)">
+                    <div class="caption" id="corn">MILHO</div>
+                    </div>
+                    <div class="item">
+                    <img src="src/corn.png" class="image" data-value="2.00" onclick="changeColor(this)">
+                    <div class="caption" id="corn">MILHO</div>
+                    </div>
+                </div>
+                <!-- Column 2 -->
+                <div class="column">
+                    <div class="item">
+                    <img src="src/corn.png" class="image" data-value="2.00" onclick="changeColor(this)">
+                    <div class="caption" id="corn">MILHO</div>
+                    </div>
+                    <div class="item">
+                    <img src="src/corn.png" class="image" data-value="2.00" onclick="changeColor(this)">
+                    <div class="caption" id="corn">MILHO</div>
+                    </div>
+                    <div class="item">
+                    <img src="src/corn.png" class="image" data-value="2.00" onclick="changeColor(this)">
+                    <div class="caption" id="corn">MILHO</div>
+                    </div>
+                    <div class="item">
+                    <img src="src/corn.png" class="image" data-value="2.00" onclick="changeColor(this)">
+                    <div class="caption" id="corn">MILHO</div>
+                    </div>
+                </div>
             </div>
         </div>
-        <div class="flex-container">
-            <!-- Column 1 -->
-            <div class="column">
-                <div class="item">
-                    <img src="src/ice-cream.png" class="image" data-value="1.00" onclick="changeColor(this)">
-                    <div class="caption" id="ice-cream">SORVETE</div>
-                </div>
-                <div class="item">
-                    <img src="src/ice-cream.png" class="image" data-value="1.00" onclick="changeColor(this)">
-                    <div class="caption" id="ice-cream">SORVETE</div>
-                </div>
-                <div class="item">
-                    <img src="src/ice-cream.png" class="image" data-value="1.00" onclick="changeColor(this)">
-                    <div class="caption" id="ice-cream">SORVETE</div>
-                </div>
-                <div class="item">
-                    <img src="src/ice-cream.png" class="image" data-value="1.00" onclick="changeColor(this)">
-                    <div class="caption" id="ice-cream">SORVETE</div>
-                </div>
-            </div>
-            <!-- Column 2 -->
-            <div class="column">
-              <div class="item">
-                <img src="src/corn.png" class="image" data-value="2.00" onclick="changeColor(this)">
-                <div class="caption" id="corn">MILHO</div>
-              </div>
-              <div class="item">
-                <img src="src/corn.png" class="image" data-value="2.00" onclick="changeColor(this)">
-                <div class="caption" id="corn">MILHO</div>
-              </div>
-              <div class="item">
-                <img src="src/corn.png" class="image" data-value="2.00" onclick="changeColor(this)">
-                <div class="caption" id="corn">MILHO</div>
-              </div>
-              <div class="item">
-                <img src="src/corn.png" class="image" data-value="2.00" onclick="changeColor(this)">
-                <div class="caption" id="corn">MILHO</div>
-              </div>
-            </div>
-          </div>
-      </div>
+        <footer>Davi Felipe F. L. Rodrigues © 2023</footer>
     </body>
 </html>
