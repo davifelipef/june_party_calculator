@@ -1,5 +1,5 @@
-/* Config for the small screens */
-@media only screen and (max-width:480px) {
+/* Config for screens up to 480 x 800 */
+@media screen and (max-width: 480px) and (max-height: 800px) {
     body {
         min-height: 100vh;
         background: linear-gradient(25deg, #f88379, #FEE715);
