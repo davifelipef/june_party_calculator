@@ -1,12 +1,7 @@
 function changeColor(img) {
     var value = parseFloat(img.getAttribute("data-value")); // Get the custom value
-    if (img.style.filter === "none") {
-        img.style.filter = "grayscale(100%)"; // Apply the grayscale filter
-        updateTotal(-value); // Add the custom value to the total
-    } else {
-        img.style.filter = "none"; // Remove the grayscale filter
-        updateTotal(value); // Subtract the custom value from the total
-    }
+    img.style.filter = "none"; // Remove the grayscale filter
+    updateTotal(value); // Subtract the custom value from the total
 }
   
 function updateTotal(value) {
