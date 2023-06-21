@@ -3,8 +3,8 @@
     body {
         min-height: 100vh;
         background: green;
-        padding-left: 0.5em;
-        padding-right: 0.5em;
+        padding-left: 2%;
+        padding-right: 2%;
         margin: 0;
         background-repeat: no-repeat;
         color: #181818;
@@ -53,8 +53,6 @@
 @media only screen and (min-width:320px) {
     body {
         background: #FEE715;
-        padding-left: 0.5em;
-        padding-right: 0.5em;
         margin: 0;
         background-repeat: no-repeat;
         color: #181818;
@@ -78,6 +76,8 @@
     .flex-container {
         display: flex;
         justify-content: center; 
+        padding-left: 3em;
+        padding-right: 3em;
         gap: 0.01em; 
     }
     #total {
@@ -161,16 +161,17 @@
         justify-content: center;
         flex-direction: column;
         align-items: center;
-        height: 20vh;
+        height: 25vh;
     }
     .image {
-        width: 7em;
-        height: 7em;
+        width: 9em;
+        height: 9em;
         filter: grayscale(100%);
         position: relative;
     }
     .caption {
         margin-top: 0.5em;
+        margin-bottom: 1em;
     }
     footer {
         margin-top: 2em;
