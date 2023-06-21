@@ -7,6 +7,8 @@
         padding-right: 2%;
         margin: 0;
         background-repeat: no-repeat;
+        font-family: 'DM Sans';
+        font-size: 1em;
         color: #181818;
         font-weight: bolder;
         text-align: center;
@@ -55,9 +57,37 @@
         background: #FEE715;
         margin: 0;
         background-repeat: no-repeat;
+        font-family: 'DM Sans';
+        font-size: 1em;
         color: #181818;
-        font-weight: bolder;
         text-align: center;
+    }
+    #app_title {
+        font-size: 1.3em;
+        color: orangered;
+        font-weight: bolder;
+        height: 4.8vh;
+    }
+    #app_description {
+        font-size: 1em;
+        height: 1vh;
+    }
+    #order_total {
+        font-size: 0.9em;
+        height: 2vh;
+    }
+    #total {
+        font-size: 2em;
+        font-weight: bolder;
+        color: green;
+        height: 7vh;
+    }
+    #clear_button {
+        height: 4vh;
+    }
+    #drinks, #meats {
+        padding-top: 0.1em;
+        font-size: 1.2em;
     }
     .content {
         padding-top: 1em;
@@ -80,15 +110,6 @@
         padding-right: 3em;
         gap: 0.01em; 
     }
-    #total {
-        font-size: 3em;
-        font-weight: bolder;
-        color: green;
-    }
-    #management {
-        padding-top: 0.5em;
-        margin: 0 0;
-    }
     .column {
         flex: 0.15; /* adjusts the horizontal space between the columns */
     }
@@ -109,9 +130,6 @@
     .caption {
         padding-top: 0.3em;
         height: 1.5em;
-    }
-    .price {
-        height: 1vh;
     }
     footer {
         margin-top: 4em;
