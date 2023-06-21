@@ -12,7 +12,7 @@
             <!--This paragraph stays above all content when rolled down-->
             <div class="frozen-container">
                 <h1 class="frozen-row" id="app_title">Calculadora de Pedidos</h1>
-                <h3 class="frozen-row" id="app_description">Festa Junina 2023</h3>
+                <h3 class="frozen-row" id="app_description">"Festa Junina 2023"</h3>
                 <br>
                 <p class="frozen-row" id="order_total">Total do pedido:</p>
                 <div class="total-container">
@@ -20,93 +20,84 @@
                     <button class="frozen-row" id="clear_button" onclick="clearContents()">Cancelar pedido</button>
                 </div>
             </div>
-            <h2 id="drinks">Bebidas</h2>
+            <!-- Em ordem alfabética -->
             <div class="flex-container">
                 <!-- Column 1 -->
                 <div class="column">
                     <div class="item">
+                        <img src="src/acai.png" class="image" data-value="8.00" onclick="changeColor(this)">
+                        <div class="caption" id="acai-200">AÇAÍ 200ml</div>
+                        <div class="price-tag">R$ 8,00</div>
+                    </div>
+                    <div class="item">
                         <img src="src/water-bottle.png" class="image" data-value="2.00" onclick="changeColor(this)">
-                        <div class="caption" id="ice-cream">ÁGUA</div>
+                        <div class="caption" id="water-bottle">ÁGUA</div>
+                        <div class="price-tag">R$ 2,00</div>
                     </div>
                     <div class="item">
-                        <img src="src/hot-drink.png" class="image" data-value="5.00" onclick="changeColor(this)">
-                        <div class="caption" id="ice-cream">QUENTÃO</div>
-                    </div>
-                </div>
-                <!-- Column 2 -->
-                <div class="column">
-                    <div class="item">
-                        <img src="src/small-soda.png" class="image" data-value="2.00" onclick="changeColor(this)">
-                        <div class="caption" id="corn">PITCHULINHA</div>
+                        <img src="src/balloon.png" class="image" data-value="2.00" onclick="changeColor(this)">
+                        <div class="caption" id="balloon">BALÃO</div>
+                        <div class="price-tag">R$ 2,00</div>
                     </div>
                     <div class="item">
-                        <img src="src/sausage.png" class="image" data-value="8.00" onclick="changeColor(this)">
-                        <div class="caption" id="corn">PÃO COM LINGUIÇA</div>
-                    </div>
-                </div>
-                <!-- Column 3 -->
-                <div class="column">
-                    <div class="item">
-                        <img src="src/juice.png" class="image" data-value="2.00" onclick="changeColor(this)">
-                        <div class="caption" id="corn">SUCO</div>
+                        <img src="src/cake-piece.png" class="image" data-value="6.00" onclick="changeColor(this)">
+                        <div class="caption" id="cake-piece">BOLO (PEDAÇO)</div>
+                        <div class="price-tag">R$ 6,00</div>
                     </div>
                     <div class="item">
                         <img src="src/green-soup.png" class="image" data-value="8.00" onclick="changeColor(this)">
-                        <div class="caption" id="ice-cream">CALDO VERDE</div>
-                    </div>
-                </div>
-            </div>
-            <!-- Terceirizados -->
-            <h2 id="meats">Carnes</h2>
-            <div class="flex-container">
-                <!-- Column 1 -->
-                <div class="column">
-                    <div class="item">
-                        <img src="src/sausage.png" class="image" data-value="8.00" onclick="changeColor(this)">
-                        <div class="caption" id="corn">PÃO COM LINGUIÇA</div>
-                    </div>
-                    <div class="item">
-                        <img src="src/barbecue.png" class="image" data-value="5.00" onclick="changeColor(this)">
-                        <div class="caption" id="barbecye">CHURRASCO</div>
+                        <div class="caption" id="cake-piece">CALDO VERDE 250ml</div>
+                        <div class="price-tag">R$ 8,00</div>
                     </div>
                 </div>
                 <!-- Column 2 -->
                 <div class="column">
                     <div class="item">
-                        <img src="src/barbecue.png" class="image" data-value="5.00" onclick="changeColor(this)">
-                        <div class="caption" id="barbecue">CHURRASCO</div>
+                        <img src="src/acai.png" class="image" data-value="15.00" onclick="changeColor(this)">
+                        <div class="caption" id="acai-300">AÇAÍ 300ml</div>
+                        <div class="price-tag">R$ 15,00</div>
                     </div>
                     <div class="item">
-                        <img src="src/corn.png" class="image" data-value="2.00" onclick="changeColor(this)">
-                        <div class="caption" id="corn">MILHO</div>
+                        <img src="src/cotton-candy.png" class="image" data-value="2.00" onclick="changeColor(this)">
+                        <div class="caption" id="bread-sausage">ALGODÃO DOCE</div>
+                        <div class="price-tag">R$ 2,00</div>
+                    </div>
+                    <div class="item">
+                        <img src="src/french-fries.png" class="image" data-value="8.00" onclick="changeColor(this)">
+                        <div class="caption" id="bread-sausage">BATATA FRITA</div>
+                        <div class="price-tag">R$ 8,00</div>
+                    </div>
+                    <div class="item">
+                        <img src="src/playing.png" class="image" data-value="5.00" onclick="changeColor(this)">
+                        <div class="caption" id="playing">BRINCADEIRAS</div>
+                        <div class="price-tag">R$ 5,00</div>
                     </div>
                 </div>
                 <!-- Column 3 -->
                 <div class="column">
                     <div class="item">
-                        <img src="src/juice.png" class="image" data-value="2.00" onclick="changeColor(this)">
-                        <div class="caption" id="corn">SUCO</div>
+                        <img src="src/acai.png" class="image" data-value="18.00" onclick="changeColor(this)">
+                        <div class="caption" id="acai-500">AÇAÍ 500ml</div>
+                        <div class="price-tag">R$ 18,00</div>
                     </div>
                     <div class="item">
-                        <img src="src/juice.png" class="image" data-value="2.00" onclick="changeColor(this)">
-                        <div class="caption" id="corn">SUCO</div>
+                        <img src="src/rice-candy.png" class="image" data-value="8.00" onclick="changeColor(this)">
+                        <div class="caption" id="rice-candy">ARROZ DOCE</div>
+                        <div class="price-tag">R$ 8,00</div>
+                    </div>
+                    <div class="item">
+                        <img src="src/cake-pot.png" class="image" data-value="7.00" onclick="changeColor(this)">
+                        <div class="caption" id="cake-pot">BOLO (POTE)</div>
+                        <div class="price-tag">R$ 7,00</div>
+                    </div>
+                    <div class="item">
+                        <img src="src/hot-dog.png" class="image" data-value="8.00" onclick="changeColor(this)">
+                        <div class="caption" id="cake-pot">CACHORRO QUENTE</div>
+                        <div class="price-tag">R$ 8,00</div>
                     </div>
                 </div>
             </div>
         </div>
         <footer>Davi Felipe F. L. Rodrigues © 2023</footer>
-        <script>
-            if ('serviceWorker' in navigator) {
-              window.addEventListener('load', function() {
-                navigator.serviceWorker.register('/june_party_calculator/service-worker.js')
-                  .then(function(registration) {
-                    console.log('Service Worker registered with scope:', registration.scope);
-                  })
-                  .catch(function(error) {
-                    console.log('Service Worker registration failed:', error);
-                  });
-              });
-            }
-        </script>  
     </body>
 </html>
