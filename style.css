@@ -1,56 +1,3 @@
-/* Config for the smallest screen: 180px */
-@media only screen and (min-width:180px) {
-    body {
-        min-height: 100vh;
-        background: green;
-        padding-left: 2%;
-        padding-right: 2%;
-        margin: 0;
-        background-repeat: no-repeat;
-        font-family: 'DM Sans';
-        font-size: 1em;
-        color: #181818;
-        font-weight: bolder;
-        text-align: center;
-    }
-    .frozen-container {
-        position: sticky;
-        width: 100%;
-        top: 1em;
-        z-index: 999; 
-    }
-    .frozen-row {
-        padding: 0.1em;
-        margin: 0 0;
-        position: relative;
-    }
-    .flex-container {
-        display: flex;
-        margin-top: 3em;
-        justify-content: center; 
-        gap: 0.1em; 
-    }
-    #total {
-        font-size: 3em;
-        font-weight: bolder;
-        color: green;
-    }
-    .column {
-        flex: 1;
-    }
-    .item {
-        margin-bottom: 2em;
-        display: flex;
-        justify-content: center;
-    }
-    .image {
-        width: 7em;
-        height: 7em;
-        filter: grayscale(100%);
-        position: relative;
-    }
-}
-
 /* Config for small screens - My phone included*/
 @media only screen and (min-width:320px) {
     body {
@@ -103,12 +50,12 @@
         touch-action: manipulation;
     }
     #clear_button:hover {
-    background-position: right center;
-    color: #fff;
-    text-decoration: none;
+        background-position: right center;
+        color: #fff;
+        text-decoration: none;
     }
     #clear_button:active {
-    transform: scale(0.90);
+        transform: scale(0.90);
     }
     #drinks, #meats {
         padding-top: 0.1em;
@@ -136,6 +83,7 @@
         gap: 0.01em; 
     }
     .column {
+        flex-basis: calc(100% / 3);
         flex: 0.15; /* adjusts the horizontal space between the columns */
     }
     .item {
@@ -167,6 +115,7 @@
         cursor: pointer;
         outline: none;
         user-select: none;
+        -webkit-tap-highlight-color: transparent;
         -webkit-user-select: none;
         touch-action: manipulation;
         transition: transform 0.3s ease;
@@ -240,12 +189,12 @@
         touch-action: manipulation;
     }
     #clear_button:hover {
-    background-position: right center;
-    color: #fff;
-    text-decoration: none;
+        background-position: right center;
+        color: #fff;
+        text-decoration: none;
     }
     #clear_button:active {
-    transform: scale(0.90);
+        transform: scale(0.90);
     }
     #drinks, #meats {
         padding-top: 0.1em;
@@ -273,6 +222,7 @@
         gap: 0.01em; 
     }
     .column {
+        flex-basis: calc(100% / 6);
         flex: 0.15; /* adjusts the horizontal space between the columns */
     }
     .item {
@@ -304,6 +254,7 @@
         cursor: pointer;
         outline: none;
         user-select: none;
+        -webkit-tap-highlight-color: transparent;
         -webkit-user-select: none;
         touch-action: manipulation;
         transition: transform 0.3s ease;
