@@ -83,7 +83,30 @@
         height: 7vh;
     }
     #clear_button {
-        height: 4vh;
+        margin: 0 auto;
+        padding: 0.9em 2em;
+        text-align: center;
+        transition: 0.5s;
+        background-size: 200% auto;
+        color: white;
+        border-radius: 1em;
+        display: block;
+        border: 0em;
+        font-weight: 700;
+        box-shadow: 0em 0em 14em -7em #f09819;
+        background-image: linear-gradient(45deg, #FF512F 0%, #F09819  51%, #FF512F  100%);
+        cursor: pointer;
+        user-select: none;
+        -webkit-user-select: none;
+        touch-action: manipulation;
+    }
+    #clear_button:hover {
+    background-position: right center;
+    color: #fff;
+    text-decoration: none;
+    }
+    #clear_button:active {
+    transform: scale(0.90);
     }
     #drinks, #meats {
         padding-top: 0.1em;
@@ -139,6 +162,14 @@
         height: 6em;
         filter: grayscale(100%);
         position: relative;
+        cursor: pointer;
+        user-select: none;
+        -webkit-user-select: none;
+        touch-action: manipulation;
+        transition: transform 0.3s ease;
+    }
+    .image:active {
+        transform: scale(0.95);
     }
     .caption {
         padding-top: 0.3em;
