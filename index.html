@@ -3,6 +3,7 @@
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" type="text/css" href="style.css">
+        <link href='https://fonts.googleapis.com/css?family=DM Sans' rel='stylesheet'>
         <script src="script.js"></script>
         <title>Calculadora de Pedidos | Festa Junina 2023</title>
     </head>
@@ -10,13 +11,13 @@
         <div class="content">
             <!--This paragraph stays above all content when rolled down-->
             <div class="frozen-container">
-                <h1 class="frozen-row">Calculadora de Pedidos</h1>
-                <h3 class="frozen-row">Festa Junina 2023</h3>
+                <h1 class="frozen-row" id="app_title">Calculadora de Pedidos</h1>
+                <h3 class="frozen-row" id="app_description">Festa Junina 2023</h3>
                 <br>
-                <p class="frozen-row">Total:</p>
+                <p class="frozen-row" id="order_total">Total do pedido:</p>
                 <div class="total-container">
                     <p class="frozen-row" id="total" data-total="0">R$ 0.00</p>
-                    <button class="frozen-row" id="clear_button" onclick="clearContents()">Limpar</button>
+                    <button class="frozen-row" id="clear_button" onclick="clearContents()">Cancelar pedido</button>
                 </div>
             </div>
             <h2 id="drinks">Bebidas</h2>
@@ -73,7 +74,7 @@
                 <div class="column">
                     <div class="item">
                         <img src="src/barbecue.png" class="image" data-value="5.00" onclick="changeColor(this)">
-                        <div class="caption" id="barbecye">CHURRASCO</div>
+                        <div class="caption" id="barbecue">CHURRASCO</div>
                     </div>
                     <div class="item">
                         <img src="src/corn.png" class="image" data-value="2.00" onclick="changeColor(this)">
