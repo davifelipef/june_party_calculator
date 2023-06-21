@@ -70,6 +70,8 @@
     }
     #app_description {
         font-size: 1em;
+        color: orangered;
+        font-style: oblique;
         height: 1vh;
     }
     #order_total {
@@ -80,7 +82,7 @@
         font-size: 2em;
         font-weight: bolder;
         color: green;
-        height: 7vh;
+        height: 8vh;
     }
     #clear_button {
         margin: 0 auto;
@@ -101,12 +103,12 @@
         touch-action: manipulation;
     }
     #clear_button:hover {
-        background-position: right center;
-        color: #fff;
-        text-decoration: none;
+    background-position: right center;
+    color: #fff;
+    text-decoration: none;
     }
     #clear_button:active {
-        transform: scale(0.90);
+    transform: scale(0.90);
     }
     #drinks, #meats {
         padding-top: 0.1em;
@@ -163,9 +165,8 @@
         filter: grayscale(100%);
         position: relative;
         cursor: pointer;
+        outline: none;
         user-select: none;
-        -webkit-tap-highlight-color: transparent;
-        tap-highlight-color: transparent;
         -webkit-user-select: none;
         touch-action: manipulation;
         transition: transform 0.3s ease;
@@ -187,17 +188,68 @@
     }
 }
 
-/* Config for small devices and most mobile phones */
+/* Config for small devices and most mobile phones*/
 @media screen and (min-width:480px) {
     body {
         background: #FEE715;
-        padding-left: 0.5em;
-        padding-right: 0.5em;
         margin: 0;
         background-repeat: no-repeat;
+        font-family: 'DM Sans';
+        font-size: 1em;
         color: #181818;
-        font-weight: bolder;
         text-align: center;
+    }
+    #app_title {
+        font-size: 1.3em;
+        color: orangered;
+        font-weight: bolder;
+        height: 4.8vh;
+    }
+    #app_description {
+        font-size: 1em;
+        color: orangered;
+        font-style: oblique;
+        height: 1vh;
+    }
+    #order_total {
+        font-size: 0.9em;
+        height: 2vh;
+    }
+    #total {
+        font-size: 2em;
+        font-weight: bolder;
+        color: green;
+        height: 8vh;
+    }
+    #clear_button {
+        margin: 0 auto;
+        padding: 0.9em 2em;
+        text-align: center;
+        transition: 0.5s;
+        background-size: 200% auto;
+        color: white;
+        border-radius: 1em;
+        display: block;
+        border: 0em;
+        font-weight: 700;
+        box-shadow: 0em 0em 14em -7em #f09819;
+        background-image: linear-gradient(45deg, #FF512F 0%, #F09819  51%, #FF512F  100%);
+        cursor: pointer;
+        user-select: none;
+        -webkit-user-select: none;
+        touch-action: manipulation;
+    }
+    #clear_button:hover {
+    background-position: right center;
+    color: #fff;
+    text-decoration: none;
+    }
+    #clear_button:active {
+    transform: scale(0.90);
+    }
+    #drinks, #meats {
+        padding-top: 0.1em;
+        font-size: 1.2em;
     }
     .content {
         padding-top: 1em;
@@ -216,38 +268,59 @@
     .flex-container {
         display: flex;
         justify-content: center; 
-        gap: 0.1em; 
-    }
-    #total {
-        font-size: 3em;
-        font-weight: bolder;
-        color: green;
+        padding-left: 3em;
+        padding-right: 3em;
+        gap: 0.01em; 
     }
     .column {
-        flex: 0.1; /* adjusts the horizontal space between the columns */
+        flex: 0.15; /* adjusts the horizontal space between the columns */
     }
     .item {
-        margin-bottom: 2em;
+        position: relative;
         display: flex;
         justify-content: center;
         flex-direction: column;
         align-items: center;
-        height: 25vh;
+        text-align: center;
+        height: 20vh;
+        margin-bottom: 2em;
+    }
+    .price-tag {
+        position: absolute;
+        width: 4em;
+        background-color: red;
+        color: #fff;
+        top: -11px; 
+        left: 50%;
+        transform: translateX(-55%);
+        padding: 0em 0em;
+        font-size: 0.8em;
     }
     .image {
-        width: 9em;
-        height: 9em;
+        width: 6em;
+        height: 6em;
         filter: grayscale(100%);
         position: relative;
+        cursor: pointer;
+        outline: none;
+        user-select: none;
+        -webkit-user-select: none;
+        touch-action: manipulation;
+        transition: transform 0.3s ease;
+    }
+    .image:active {
+        transform: scale(0.95);
     }
     .caption {
-        margin-top: 0.5em;
-        margin-bottom: 1em;
-    }
-    footer {
-        margin-top: 2em;
-        margin-bottom: 1em;
-        font-size: 0.9em;
+        padding-top: 0.3em;
+        font-size: 0.7em;
+        font-weight: bolder;
+        height: 1.5em;
     }
     
+    footer {
+        margin-top: 4em;
+        margin-bottom: 3em;
+        font-size: 0.9em;
+    }
 }
