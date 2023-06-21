@@ -163,6 +163,7 @@
         filter: grayscale(100%);
         position: relative;
         cursor: pointer;
+        outline: none;
         user-select: none;
         -webkit-user-select: none;
         touch-action: manipulation;
@@ -188,7 +189,7 @@
 /* Config for small devices and most mobile phones*/
 @media screen and (min-width:480px) {
     body {
-        background: #FEE715;
+        background: red;
         padding-left: 0.5em;
         padding-right: 0.5em;
         margin: 0;
