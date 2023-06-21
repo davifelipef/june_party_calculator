@@ -57,19 +57,14 @@
     #clear_button:active {
         transform: scale(0.90);
     }
-    #drinks, #meats {
-        padding-top: 0.1em;
-        font-size: 1.2em;
-    }
-    .content {
-        padding-top: 1em;
-    }
     .frozen-container {
+        padding-top: 0.9em;
         position: sticky;
         top: 0;
         background: #FEE715;
         z-index: 999; 
         padding-bottom: 1em; /* Ajust the space below the container */
+        margin-bottom: 2em; /* Adjust the space between container and content */
     }
     .frozen-row {
         margin: 0 0;
@@ -209,6 +204,7 @@
         background: #FEE715;
         z-index: 999; 
         padding-bottom: 1em; /* Ajust the space below the container */
+        margin-bottom: 2em; /* Adjust the space between container and content */
     }
     .frozen-row {
         margin: 0 0;
