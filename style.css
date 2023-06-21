@@ -101,12 +101,12 @@
         touch-action: manipulation;
     }
     #clear_button:hover {
-    background-position: right center;
-    color: #fff;
-    text-decoration: none;
+        background-position: right center;
+        color: #fff;
+        text-decoration: none;
     }
     #clear_button:active {
-    transform: scale(0.90);
+        transform: scale(0.90);
     }
     #drinks, #meats {
         padding-top: 0.1em;
@@ -163,8 +163,9 @@
         filter: grayscale(100%);
         position: relative;
         cursor: pointer;
-        outline: none;
         user-select: none;
+        -webkit-tap-highlight-color: transparent;
+        tap-highlight-color: transparent;
         -webkit-user-select: none;
         touch-action: manipulation;
         transition: transform 0.3s ease;
@@ -186,10 +187,10 @@
     }
 }
 
-/* Config for small devices and most mobile phones*/
+/* Config for small devices and most mobile phones */
 @media screen and (min-width:480px) {
     body {
-        background: red;
+        background: #FEE715;
         padding-left: 0.5em;
         padding-right: 0.5em;
         margin: 0;
