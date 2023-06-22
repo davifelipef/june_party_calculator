@@ -114,10 +114,10 @@
         -webkit-tap-highlight-color: transparent;
         -webkit-user-select: none;
         touch-action: manipulation;
-        transition: transform 0.3s ease;
+        transition: 0.5s ease;
     }
     .image:active {
-        transform: scale(0.95);
+        transform: scale(0.90);
     }
     .caption {
         padding-top: 0.3em;
@@ -145,19 +145,19 @@
         text-align: center;
     }
     #app_title {
-        font-size: 1.3em;
+        font-size: 2em;
         color: orangered;
         font-weight: bolder;
-        height: 4.8vh;
+        height: 6.8vh;
     }
     #app_description {
-        font-size: 1em;
+        font-size: 1.2em;
         color: orangered;
         font-style: oblique;
         height: 1vh;
     }
     #order_total {
-        font-size: 0.9em;
+        font-size: 2.9em;
         height: 2vh;
     }
     #total {
@@ -221,7 +221,7 @@
     }
     .column {
         flex-basis: calc(100% / 6);
-        flex: 0.15; /* adjusts the horizontal space between the columns */
+        flex: 0.2; /* adjusts the horizontal space between the columns */
     }
     .item {
         position: relative;
@@ -230,7 +230,7 @@
         flex-direction: column;
         align-items: center;
         text-align: center;
-        height: 20vh;
+        height: 28vh;
         margin-bottom: 2em;
     }
     .price-tag {
@@ -245,8 +245,8 @@
         font-size: 0.8em;
     }
     .image {
-        width: 6em;
-        height: 6em;
+        width: 8em;
+        height: 8em;
         filter: grayscale(100%);
         position: relative;
         cursor: pointer;
@@ -262,7 +262,7 @@
     }
     .caption {
         padding-top: 0.3em;
-        font-size: 0.7em;
+        font-size: 1em;
         font-weight: bolder;
         height: 1.5em;
     }
