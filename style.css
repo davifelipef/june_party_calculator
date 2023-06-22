@@ -103,6 +103,9 @@
         padding: 0em 0em;
         font-size: 0.8em;
     }
+    .price-tag.colored {
+        background-color: green; 
+    }
     .image {
         width: 6em;
         height: 6em;
@@ -243,6 +246,9 @@
         transform: translateX(-55%);
         padding: 0em 0em;
         font-size: 0.8em;
+    }
+    .price-tag.colored {
+        background-color: green; 
     }
     .image {
         width: 8em;
