@@ -1,16 +1,29 @@
+// Function that handles the image color change as well as updating the data clicks
 function changeColor(img) {
-    var value = parseFloat(img.getAttribute("data-value")); // Get the custom value
-    img.style.filter = "none"; // Remove the grayscale filter
-
-    // Update the caption text
+    // Gets the custom value from the image data-value
+    var value = parseFloat(img.getAttribute("data-value")); 
+    // Removes the image grayscale filter
+    img.style.filter = "none"; 
+    // Updates the caption text
     var caption = img.nextElementSibling;
-    var clickCount = parseInt(img.getAttribute("data-click-count")) || 0; // Default to 0 if data-click-count attribute is not set
+    // Defaults to 0 if the data click count is not set
+    var clickCount = parseInt(img.getAttribute("data-click-count")) || 0; 
+    // Inscreases the click count by one
     clickCount++;
     img.setAttribute("data-click-count", clickCount);
+    // Adds the click count to the right of the item name between parenthesis
     caption.textContent = caption.textContent.replace(/\(\d+\)$/, "") + " (" + clickCount + ")";
-      
+    // Updates the total value
+    updateTotal(value);
+    // Find the corresponding price tag element
+    var priceTag = img.nextElementSibling.nextElementSibling;
 
-    updateTotal(value); // Adds the custom value from the total
+    // Find the corresponding price tag element
+    var priceTag = img.nextElementSibling.nextElementSibling;
+    // Toggle the "colored" class on the price tag
+    if (priceTag) {
+        priceTag.classList.add("colored");
+    }
 }
   
 function updateTotal(value) {
@@ -22,10 +35,9 @@ function updateTotal(value) {
     if (newTotal < 0) {
         newTotal = 0;
     }
-
     totalElement.textContent = "R$ " + newTotal.toFixed(2);
     totalElement.setAttribute("data-total", newTotal);
-}
+} 
 
 function clearContents() {
     var totalElement = document.getElementById("total");
@@ -42,5 +54,9 @@ function clearContents() {
         caption.textContent = caption.textContent.replace(/\(\d+\)$/, "");
         img.setAttribute("data-click-count", 0);
     }
-}
 
+    var priceElements = document.getElementsByClassName("price-tag");
+    for (var i = 0; i < priceElements.length; i++) {
+        priceElements[i].classList.remove("colored");
+    }
+}
