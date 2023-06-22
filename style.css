@@ -157,11 +157,11 @@
         height: 1vh;
     }
     #order_total {
-        font-size: 2.9em;
-        height: 2vh;
+        font-size: 1em;
+        height: 3vh;
     }
     #total {
-        font-size: 2em;
+        font-size: 2.5em;
         font-weight: bolder;
         color: green;
         height: 8vh;
